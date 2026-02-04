@@ -5,7 +5,7 @@ import strategy.behavior.MovementBehavior;
 public class RunMovement implements MovementBehavior
 {
     @Override
-    public void movement()
+    public void move()
     {
         System.out.println("The character is running");
     }

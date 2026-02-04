@@ -1,5 +1,5 @@
 package strategy.behavior;
 
 public interface MovementBehavior {
-    public void movement();
+    public void move();
 }

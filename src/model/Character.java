@@ -3,7 +3,7 @@ package model;
 import strategy.behavior.JumpBehavior;
 import strategy.behavior.MovementBehavior;
 
-public class Character {
+public abstract class Character {
 
     // Attributes
     private String name;
@@ -17,6 +17,12 @@ public class Character {
         this.name = name;
         this.age = age;
     }
+
+    public abstract void display();
+
+    public void performJump() { jumpBehavior.jump(); }
+
+    public void performMove() { movementBehavior.move(); }
 
     // Setters
     public void setAge(int age) { this.age = age; }
